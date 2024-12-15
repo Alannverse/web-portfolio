@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasepti Alan - Web Developer</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="/src/custom.css" />
+    <link rel="stylesheet" href="/css/critical.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="/css/non-critical.css"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <a href="#" class="text-xl font-bold text-gray-800">PA.</a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-gray-600 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Skills</a
+            >
+            <a href="#blog" class="text-gray-600 hover:text-blue-600 transition"
+              >Blog</a
+            >
+          </div>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#home"
+            class="block px-3 py-2 text-gray-600 hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 text-gray-600 hover:text-blue-600"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="block px-3 py-2 text-gray-600 hover:text-blue-600"
+            >Projects</a
+          >
+          <a
+            href="#skills"
+            class="block px-3 py-2 text-gray-600 hover:text-blue-600"
+            >Skills</a
+          >
+          <a
+            href="#blog"
+            class="block px-3 py-2 text-gray-600 hover:text-blue-600"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="fade-in night-sky py-16">
+      <div class="absolute inset-0"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Bagian Teks -->
+          <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+            <h1
+              class="text-4xl md:text-6xl font-bold text-white mb-4 animate-fadeIn"
+            >
+              Hi, I'm <span style="color: #3b82f6">Prasepti Alan</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 h-8">
+              <span id="typing-text"></span>
+              <span class="typing-cursor">|</span>
+            </p>
+            <!-- Link Sosial -->
+            <div class="flex space-x-4 mt-4">
+              <a
+                href="https://www.linkedin.com/in/prasepti-alan-6a2684318"
+                target="_blank"
+                class="text-white hover:text-blue-500"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/Alannverse"
+                target="_blank"
+                class="text-white hover:text-gray-500"
+                >GitHub</a
+              >
+              <a
+                href="https://instagram.com/prasepti_alan"
+                target="_blank"
+                class="text-white hover:text-pink-400"
+                >Instagram</a
+              >
+            </div>
+          </div>
+
+          <!-- Bagian Foto -->
+          <div class="md:w-1/2 relative">
+            <div
+              class="w-full h-[600px] overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src="/img/foto about.png"
+                alt="Profile"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stars and Shooting Stars -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div
+          class="shooting-star"
+          style="top: 30%; left: 20%; animation-delay: 0s"
+        ></div>
+        <div
+          class="shooting-star"
+          style="top: 50%; left: 60%; animation-delay: 1s"
+        ></div>
+        <div
+          class="shooting-star"
+          style="top: 70%; left: 40%; animation-delay: 2s"
+        ></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in night-sky py-16">
+      <div class="absolute inset-0"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">
+          About Me
+        </h2>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto"
+        >
+          <div class="md:w-1/2 mb-8 md:mb-0 relative">
+            <div
+              class="w-full h-[600px] overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 relative"
+            >
+              <img
+                src="/img/ppppp.png"
+                alt="Profile"
+                class="w-full h-full object-cover relative z-20"
+              />
+              <span class="absolute inset-0 -z-10 transparent-bg">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#FF0066"
+                    d="M57.4,-21.2C65.3,5.7,56.4,35.5,38.3,47.5C20.1,59.4,-7.2,53.5,-23.9,39.7C-40.7,26,-46.8,4.4,-41,-19.6C-35.2,-43.5,-17.6,-69.8,3.6,-71C24.7,-72.1,49.5,-48.1,57.4,-21.2Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <p class="text-white text-lg mb-6">
+              Saya adalah mahasiswa Teknik Informatika dengan minat besar dalam
+              pengembangan web. Saat ini, saya aktif membangun portofolio
+              pribadi serta mengembangkan berbagai proyek web, termasuk untuk
+              institusi pendidikan. Proyek-proyek ini bertujuan untuk
+              menampilkan keterampilan saya sekaligus memperdalam pemahaman
+              tentang berbagai framework yang relevan dengan pengembangan web.
+              Melalui eksplorasi dan praktik ini, saya berkomitmen untuk terus
+              memperluas wawasan serta meningkatkan kemampuan teknis dalam dunia
+              pengembangan web.
+            </p>
+            <p class="text-white text-lg">
+              Selain itu, saya juga tertarik untuk terus belajar tentang
+              teknologi terbaru. Saya percaya bahwa dengan terus belajar dan
+              beradaptasi, saya dapat memberikan kontribusi yang lebih baik di
+              dunia digital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="fade-in py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+
+        <div class="space-y-12">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="md:flex">
+              <div class="md:flex-shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:w-48"
+                  src="/img/web sekolah.png"
+                  alt="School Website"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-semibold mb-2">Website Sekolah</h3>
+                <p class="text-gray-600 mb-4">
+                  Ongoing project developing a school website with comprehensive
+                  features for school management and information dissemination.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >PHP</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >MySQL</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >Bootstrap</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >JavaScript</span
+                  >
+                </div>
+                <a href="#" class="text-blue-500 hover:underline"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="md:flex">
+              <div class="md:flex-shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:w-48"
+                  src="/img/per1.png"
+                  alt="Personal Portfolio"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-semibold mb-2">Personal Portfolio</h3>
+                <p class="text-gray-600 mb-4">
+                  A responsive personal portfolio website showcasing projects
+                  and skills.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >HTML</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >CSS</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >Tailwind CSS</span
+                  >
+                </div>
+                <a href="#" class="text-blue-500 hover:underline"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <div class="md:flex">
+              <div class="md:flex-shrink-0">
+                <img
+                  class="h-48 w-full object-cover md:w-48"
+                  src="/img/fig1.png"
+                  alt="Clinic Design"
+                />
+              </div>
+              <div class="p-8">
+                <h3 class="text-xl font-semibold mb-2">Klinik Design</h3>
+                <p class="text-gray-600 mb-4">
+                  UI/UX design project for a pediatric clinic focusing on
+                  user-friendly interface and accessibility.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >Figma</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                    >UI/UX Design</span
+                  >
+                </div>
+                <a href="#" class="text-blue-500 hover:underline"
+                  >Learn more →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        id="projectModal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+      >
+        <div class="bg-white p-8 rounded-lg max-w-3xl w-full mx-4">
+          <div class="flex justify-between items-center mb-6">
+            <h2 id="modalTitle" class="text-2xl font-bold"></h2>
+            <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            id="modalImages"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
+          >
+            <!-- Gambar akan ditambahkan secara dinamis melalui JavaScript -->
+          </div>
+          <div class="text-gray-600 mb-6">
+            <h3 class="font-semibold mb-2">Project Description</h3>
+            <p id="modalDescription"></p>
+          </div>
+          <div class="flex justify-end">
+            <button
+              class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-300"
+              onclick="document.getElementById('projectModal').classList.add('hidden')"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in night-sky">
+      <!-- Bintang -->
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+
+      <!-- Bintang Jatuh -->
+      <div
+        class="shooting-star"
+        style="top: 30%; left: 20%; animation-delay: 0s"
+      ></div>
+      <div
+        class="shooting-star"
+        style="top: 50%; left: 60%; animation-delay: 1s"
+      ></div>
+      <div
+        class="shooting-star"
+        style="top: 70%; left: 40%; animation-delay: 2s"
+      ></div>
+      <div
+        class="shooting-star"
+        style="top: 80%; left: 80%; animation-delay: 3s"
+      ></div>
+      <div
+        class="shooting-star"
+        style="top: 40%; left: 10%; animation-delay: 4s"
+      ></div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-white mb-12">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-html5 text-4xl text-blue-600 mb-2"></i>
+            <h3 class="font-bold text-white">HTML</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-css3 text-4xl text-blue-600 mb-2"></i>
+            <h3 class="font-bold text-white">CSS</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-js text-4xl text-blue-600 mb-2"></i>
+            <h3 class="font-bold text-white">JavaScript</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-php text-4xl text-blue-600 mb-2"></i>
+            <h3 class="font-bold text-white">PHP</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fas fa-database text-4xl text-blue-600 mb-2"></i>
+            <h3 class="font-bold text-white">MySQL</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-github text-4xl text-black mb-2"></i>
+            <h3 class="font-bold text-white">Github</h3>
+          </div>
+          <div
+            class="skill-card transition-transform transform hover:scale-105 bg-gray-100 p-4 rounded-lg text-center shadow-lg"
+          >
+            <i class="fab fa-figma text-4xl text-black mb-2"></i>
+            <h3 class="font-bold text-white">Figma</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2 class="fade-in text-3xl font-bold">My Blog</h2>
+
+      <!-- Jalur Atas -->
+      <div class="image-carousel">
+        <div class="lane lane-top">
+          <!-- Gambar aslinya -->
+          <div class="image-item">
+            <img src="/img/blog1.jpeg" alt="Blog Image 1" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog2.jpg" alt="Blog Image 2" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog5.jpeg" alt="Blog Image 3" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog6.jpeg" alt="Blog Image 4" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog7.jpeg" alt="Blog Image 5" />
+          </div>
+          <!-- duplikatnya supaya tidak smooth scrollnya -->
+          <div class="image-item">
+            <img src="/img/blog1.jpeg" alt="Blog Image 1" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog2.jpg" alt="Blog Image 2" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog5.jpeg" alt="Blog Image 3" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog6.jpeg" alt="Blog Image 4" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog7.jpeg" alt="Blog Image 5" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Jalur Bawah -->
+      <div class="image-carousel">
+        <div class="lane lane-bottom">
+          <!--gambar aslinya-->
+          <div class="image-item">
+            <img src="/img/blog3.jpg" alt="Blog Image 6" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog4.jpeg" alt="Blog Image 7" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog8.jpeg" alt="Blog Image 8" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog9.jpeg" alt="Blog Image 9" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog10.jpeg" alt="Blog Image 10" />
+          </div>
+          <!--  duplikatnya supaya tidak smooth scrollnya -->
+          <div class="image-item">
+            <img src="/img/blog3.jpeg" alt="Blog Image 6" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog4.jpeg" alt="Blog Image 7" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog8.jpeg" alt="Blog Image 8" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog9.jpeg" alt="Blog Image 9" />
+          </div>
+          <div class="image-item">
+            <img src="/img/blog10.jpeg" alt="Blog Image 10" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white shadow-md z-50 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-300">
+          &copy; 2024 Prasepti Alan. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+      const typingText = document.getElementById("typing-text");
+      const texts = [
+        "I am a student at Universitas Kristen Indonesia Paulus",
+        "Web Developer Enthusiast",
+        "UI/UX exploration",
+      ];
+      let textIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeText() {
+        const currentText = texts[textIndex];
+
+        if (isDeleting) {
+          typingText.textContent = currentText.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingText.textContent = currentText.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+          isDeleting = true;
+          setTimeout(typeText, 800); //
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          textIndex = (textIndex + 1) % texts.length;
+          setTimeout(typeText, 100); //
+        } else {
+          setTimeout(typeText, isDeleting ? 30 : 70);
+        }
+      }
+
+      window.onload = typeText;
+    </script>
+  </body>
+</html>
